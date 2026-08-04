@@ -14,17 +14,27 @@ import initialRecipes from "../data/recipes";
 
 
 const RecipeContext = createContext();
+const clearAllData = async()=>{
 
+  await AsyncStorage.removeItem("favorites");
+
+  await AsyncStorage.removeItem("myRecipes");
+
+  setFavorites([]);
+
+  setMyRecipes([]);
+
+};
 
 
 export function RecipeProvider({children}) {
 
 
-  const [recipes,setRecipes] = useState([]);
+  const [recipes,setRecipes] = useState([clearAllData]);
 
-  const [favorites,setFavorites] = useState([]);
+  const [favorites,setFavorites] = useState([clearAllData]);
 
-  const [myRecipes,setMyRecipes] = useState([]);
+  const [myRecipes,setMyRecipes] = useState([clearAllData]);
 
 
 

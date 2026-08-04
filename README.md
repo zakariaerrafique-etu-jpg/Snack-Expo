@@ -19,7 +19,9 @@ Preview in the Web tab, or scan the QR code with the Expo Go app
 You can also run it locally:
 
 npm install
+
 npx expo start
+
 Tech
 Expo / React Native
 React Navigation (native stack)

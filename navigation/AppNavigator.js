@@ -35,30 +35,33 @@ function HomeStack() {
 
 
       <Stack.Screen
-        name="RecipeDetails"
-        component={RecipeDetails}
-        options={{
-          title: "Détails de la recette"
-        }}
-      />
+  name="RecipeDetails"
+  component={RecipeDetails}
+  options={{
+    title:"Détails recette",
+    headerShown:true
+  }}
+/>
 
 
-      <Stack.Screen
-        name="AddRecipe"
-        component={AddRecipeScreen}
-        options={{
-          title: "Ajouter une recette"
-        }}
-      />
+<Stack.Screen
+  name="AddRecipe"
+  component={AddRecipeScreen}
+  options={{
+    title:"Ajouter une recette",
+    headerShown:true
+  }}
+/>
 
 
-      <Stack.Screen
-        name="EditRecipe"
-        component={EditRecipeScreen}
-        options={{
-          title: "Modifier la recette"
-        }}
-      />
+<Stack.Screen
+  name="EditRecipe"
+  component={EditRecipeScreen}
+  options={{
+    title:"Modifier une recette",
+    headerShown:true
+  }}
+/>
 
     </Stack.Navigator>
 
